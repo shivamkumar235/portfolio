@@ -1,0 +1,1652 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial;
+    /* scroll-behavior:smooth; 
+    overflow: hidden; */
+} 
+
+html{
+    scroll-behavior: none;
+    background-color: green;
+    width: 100%;
+}
+
+
+ #page1{
+    height: 50vw;
+
+    width: 100%;
+
+    z-index: 1190900;
+   position: relative;
+ 
+
+} 
+
+#page1 .nav{
+   height: 6vw;
+   width: 100%;
+   /* background-color: wheat; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0vw 2vw;
+   z-index: 100;
+
+
+}
+
+
+
+#page1 .nav h2{
+    color: white;
+    padding: 2vw 0vw;
+    display: inline-block;
+    margin-right: 42vw;
+}
+
+#page1 .nav img{
+    height: 2.4vw;
+    border-radius: 50px;
+    padding-top: 1.8vw;
+
+}
+
+
+#page1 .nav .part1{
+    width: 98.5%;
+    position: absolute;
+    left: 0;
+    padding-left: 1.5vw;
+    display: flex;
+    gap: 1.2vw;
+    /* background-color: black; */
+    z-index: 100;
+    
+}
+#page1 .nav .part1:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.539);
+}
+
+#page1 .nav .button{
+     color: rgba(255, 255, 255, 0.153);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 0.6vw;
+     gap: 1.5vw;
+     padding-right: 3vw;
+     position: relative;
+     /* z-index: 1; */
+     padding: 2vw 3vw;
+
+
+}
+#page1 .nav .button h1{
+    /* border: 1px solid rgba(255, 255, 255, 0.529); */
+    padding: 0.4vw 0.6vw;
+    border-radius: 50px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+
+
+}
+#page1 .nav .button h1 a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.955);
+}
+
+#page1 .nav .button h1:hover a{
+    color: black;
+    z-index: 99;
+    position: relative;
+}
+
+#page1 .nav .button h1::after{
+
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 255, 255);
+    position: relative; 
+    position: absolute;
+    left: 0%;
+    bottom: 100%;
+    transition: all ease 0.3s;
+    border-radius: 50%;
+
+}
+
+#page1 .nav .button h1:hover::after{
+    bottom:  0%;
+    border-radius: 0%;
+}
+#page1 .profile-detail{
+    width: 100%;
+    height: 47vw;
+    display: flex;
+    justify-content: space-around;
+    background:linear-gradient(to bottom,black,#ff004f);  
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    padding-top: 4vw;
+  
+    z-index: 10;
+
+
+}
+#main #page1 .container{
+    background-color: #ff004f;
+}
+#page1 .profile-detail .box1{
+    height: 40vw;
+    width: 60vw;
+    position: relative;
+    margin-top: 6vw;
+    z-index: 10;
+    /* background-color: #ff004f; */
+
+    /* background-color: red; */
+}
+#page1 .profile-detail .box2{
+    padding-right: 15vw;
+    padding-top: 0vw;
+    margin-top: 6vw;
+    /* background-color: #ff004f; */
+    z-index: 10;
+
+
+}
+#page1 .profile-detail .box2 img{
+    height: 27vw;
+    border-radius: 50%;
+    /* padding-right: 10vw; */
+    position: relative;
+    position: absolute;
+
+    padding-top:0vw;
+    top: 4vw;
+    left: 62vw;
+    z-index: 100;
+    margin-top: 5vw;
+    box-shadow: 0 0 15px white;
+
+  
+}
+#page1 .profile-detail .box2 .circle{
+    height: 25vw;
+    width: 22vw;
+    background-color: aqua
+    ;
+    border-radius: 50%;
+    z-index: 99;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(80px);
+}
+
+@keyframes anime {
+    from{
+        transform: translate(10%,-8%);
+    }
+    to{
+        transform: translate(-8%,8%);
+    }
+    
+}
+
+.robot{
+    height: 30vw;
+    position: fixed;
+    top: 21vw;
+    color: white;
+    padding: 0;
+    margin: 0;
+     /* background-color: #ff004f;  */
+    /* display: block; */ 
+    right: 38vw;
+}
+
+
+
+#page1 .profile-detail .box1 .my-info h3{
+    font-size: 4vw;
+    display: flex;
+    color: white;
+    z-index: 10;
+}
+
+#page1 .profile-detail .box1 .my-info h1 {
+    font-size: 3vw;
+    color: white;
+    z-index: 10;
+
+}
+
+#page1 .profile-detail .box1 .my-info h4{
+    color: white;
+    font-size: 2vw;
+    text-shadow: 0 0 20px aqua;
+
+}
+
+#page1 .profile-detail .box1 .my-info h3 p{
+    padding-left: 0.6vw;
+    color: white;
+    font-size: 4vw;
+}
+#page1 .profile-detail .box1 .my-info{
+    padding-left: 12vw;
+    padding-top: 6vw;
+    position: relative;
+
+
+}
+#page1 .profile-detail .box1 .my-info h1  .text{
+    color: #ff004f;
+    font-size: 2.4vw;
+    
+}
+
+/* --------------------------About------------------------ */
+#page2 .heading{
+    color: white;
+    font-size: 8vw;
+    margin-top: 70vw;
+    display: none;
+}
+
+.robot2{
+     height: 50vw;
+    position: absolute;
+    /* top: 10vw; */
+    left: 25vw;
+    color: white;
+}
+
+ #page2{
+    display: flex;
+    height: 47vw;
+    z-index: 3;
+
+    padding-top: 4vw ;
+    padding-left: 5vw;
+    background-color: black;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.416);
+    /* position: fixed; */
+}
+ #page2 .column1{
+    height: 40vw;
+    width: 40%;
+    background-color: aqua;
+    background-image: url(images/big.jpg);
+    box-shadow: 0 0 15px aqua;
+     
+    background-position: center;
+    background-size: cover;
+    z-index: 99;
+    border-radius: 20px;
+}
+ #page2 .column2{
+    color: rgba(255, 255, 255, 0.74);
+    height: 60vw;
+    width: 60%;
+    padding-left: 3vw;
+    padding-top: 1vw;
+    padding-right: 7vw;
+
+}
+#page2 .column2 .details{
+    padding-top: 1vw;
+    padding-left: 0.5vw;
+    display: flex;
+    font-size: 1.1vw;
+    gap: 2vw;
+
+
+
+}
+#page2 .column2 .details h3{
+    height: 0.3vw;
+    /* border: 1px solid white; */
+   
+    padding: 1vw 0.6vw;
+    border-radius: 50px;
+    /* padding-bottom: 2vw; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+#page2 .column2 .details h3::after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 255, 255, 0.83);
+        /* position: relative; */
+        position: absolute;
+        left: 0%;
+        bottom: -100%;
+        transition: all ease 0.6s;
+        border-radius: 50%;
+}
+#page2 .column2 .details h3:hover::after{
+    bottom:  0%;
+    border-radius: 0%;
+    z-index: 98;
+}
+#page2 .column2 .details-content{
+    padding-top: 1.6vw;
+    padding-left: 1vw;
+    gap: 1vw;
+   
+    
+}
+#page2 .column2 .details-content ul li{
+    margin-top: 1vw;
+    font-size: 1.3vw;
+    list-style: none;
+}
+#page2 .column2 .details-content ul li span{
+    color: #ff004f;
+}
+#page2 .column2 .content1{
+    display: none;
+}
+
+#page2 .column2 .content2{
+    display: none;
+}
+#page2 .column2 .details h3 b{
+    color: rgba(255, 255, 255, 0.667);
+    z-index: 100;
+    position: relative;
+}
+#page2 .column2 .details h3:hover b{
+  
+    color: black;
+    z-index: 100;
+}
+ #page2 .column2 h2{
+    font-size: 4vw;
+    color: white;
+
+}
+
+ #page2 .column2 p{
+    margin-top: 2vw;
+    font-size: 1.3vw;
+}
+
+
+ #page2 .circle{
+    height: 28vw;
+    width: 28vw;
+    background-color: aqua;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    position: absolute;
+    bottom: 3vw;
+    left: 3vw;
+
+    animation-name: anime;
+
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(10px);
+}
+
+@keyframes anime {
+    from{
+        transform: translate(10%,-8%);
+    }
+    to{
+        transform: translate(-10%,10%);
+    }
+    
+}
+
+
+
+/* -- --------------------------My Services------------------------  */
+
+#page3{
+    height: 42vw;
+    width: 97%;
+    position: relative;
+    background-color: black;
+    padding-left: 3vw;
+    padding-top: 4vw;
+    z-index: 3;
+    /* gap: 12vw; */
+
+
+
+   
+}
+#page3 .box{
+    gap: 8vw;
+}
+
+#page3  .box1{
+    height: 23vw;
+    width: 34vw;
+    background: rgba(255, 255, 255, 0.153);
+
+    display: flex;
+   
+    display: inline-block;
+    margin-left: 6vw;
+    border-radius: 1vw;
+    color: white;
+    padding-top: 2vw;
+    position: relative;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    /* padding-bottom: 1vw; */
+    transition: all ease 0.6s;
+    
+
+}
+#page3 .box1:hover {
+   transform: translateY(-10px);
+   background-color: #ff004f;
+   
+}
+#page3 h1{
+    font-size: 4vw;
+    padding-left: 5vw;
+    color: white;
+    padding-bottom: 2.5vw;
+
+ }
+
+ #page3 .box .box1 h2{
+    font-size: 2.5vw;
+    padding-top: 1.2vw;
+
+ }
+ #page3 .box .box1 p{
+    font-size: 1.4vw;
+    padding-top: 2vw;
+ }
+ 
+#page3  .box1 i{
+    font-size: 2.7vw;
+
+}
+
+#page3 .box .box1 h4 a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 1.5vw;
+    margin-top: 200px;
+
+}
+/* #page3 .box .box1 h4 .icon{
+    font-size: 1.5vw;
+    padding-left: 0.3vw;
+    z-index: 120;
+    color: white;
+} */
+#page3 .box .box1 h4 a i{
+    font-size: 1.4vw;
+    padding-left: 0.4vw;
+}
+#page3 .box .box1 .service_dic{
+    font-family: cursive;
+}
+
+/* ---------------------------Skills-------------------------------------- */
+
+#page4{
+    width: 100%;
+    height: 45vw;
+    background-color: black;
+    position: relative;
+    /* padding-left: 5vw; */
+    padding-top: 4vw;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.416);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.416);
+    z-index: 3;
+
+
+
+}
+#page4 .container{
+    height:30.3vw;
+    width: 20vw;
+    position: relative;
+
+
+}
+#page4 h2{
+    color: white;
+    font-size: 4vw;
+    padding-bottom: 2.5vw;
+    padding-left: 1vw;
+    margin-left: 3vw;
+
+
+}
+#page4 .container .skill {
+    height: 5vw;
+    width: 50vw;
+    /* background-color: rgba(255, 255, 255, 0.153); */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid aqua;
+    margin-left: 3vw;
+    /* border-top: 1px solid #ff004f; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    padding-left: 1vw;
+
+    /* position: absolute; */
+  }
+
+  #page4 .skill h1{
+    font-size: 3vw;
+    width: 100%;
+    height: 100%;
+    /* margin-left: 5vw; */
+    color: rgba(255, 255, 255, 0.589);
+    z-index: 99;
+    padding-top: 2vw;
+    display: block;
+  }
+
+  .anime{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(to bottom,aqua,#ff004f);
+
+    /* background-color: #ff004f; */
+    position: absolute;
+    left: 0%;
+    top: -100%;
+    transition: all ease 0.7s;
+  }
+
+  .skill:hover .anime{
+    top: 0%;
+  }
+  .image-container{
+    height: 20vw;
+    width: 20vw;
+    position: fixed;
+    top: 14vw;
+    left: 66vw;
+    z-index: 990;
+    /* background-image: url(js\ logo.jpeg); */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 6px solid #ff004f;
+    background-color: rgba(255, 255, 255, 0.589);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: none;
+
+
+    
+  }
+  .image-container h1{
+    font-size: 6vw;
+    color: #ff004f;
+    z-index: 991;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    padding-top: 13vw;
+    padding-left: 5vw;
+    display: none;
+    background-color:  rgba(255, 255, 255, 0.589);
+   
+   }
+  #page4 .skill img{
+    height: 2vw;
+   width: 2.3vw;
+   object-position: center;
+    object-fit: cover;
+    margin-right: 2vw;
+    border-radius: 50%;
+    z-index: 1000;
+    display: none;
+  }
+
+  /* #page4 .containerdata-image{} */
+
+
+ /* ----------------------------------Experiencs--------------------------- */
+
+ #page5{
+    background-color: black;
+    width: 100%;
+    height: 50vw;
+    z-index: 3;
+    position: relative;
+ }
+ #page5 h1{
+    padding-left: 7vw;
+    padding-top: 4vw;
+    font-size: 4vw;
+    color: white;
+ }
+
+ #page5 .container{
+    height: 72%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2vw;
+
+ }
+ #page5 .container .pro{
+    height: 30vw;
+    width: 23vw;
+    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 1.2vw;
+    position: relative;
+    overflow: hidden;
+
+ }
+ #page5 .container .pro img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw;
+
+ }
+ #page5 .container .pro h2{
+    color: white;
+    font-size: 2.3vw;
+ }
+ #page5 .container .pro p{
+    color: white;
+    font-size: 1vw;
+ }
+ #page5 .container .pro .content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background:linear-gradient(to bottom,rgba(255, 255, 255, 0.589),#ff004f);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1vw;
+    transition: all ease 0.5s;
+
+
+
+ }
+ #page5 .container .pro:hover .content{
+     top: 0%;
+ }
+
+ /* --------------------------------Contect----------------------------------- */
+
+#page6{
+    height: 50vw;
+    width: 80%;
+    z-index: 21;
+}
+#footer{
+    height: 50vw;
+    width: 100%;
+    position: relative;
+    background:linear-gradient(to bottom,black,#ff004f);
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    display: flex;
+    color: white;
+}
+#footer .box1{
+    height: 100%;
+    width: 50vw;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+#footer .box2{
+    height: 100%;
+    width: 50vw;
+    z-index: 10;
+    /* position: relative; */
+    padding-top: 8vw;
+    padding-bottom: 5vw;
+    
+   
+}
+#footer .box2 textarea{
+    width: 35vw;
+     /* background-color: rgba(0, 0, 0, 0.45);  */
+         background-color: rgb(250, 245, 245);
+
+    color: black; 
+    border-radius: 1vw;
+    padding-left: 1vw;
+    font-size: 1.4vw;
+    padding-top: 1vw;
+    padding-right: 1vw;
+    /* box-shadow: 0 0 12 aqua; */
+   outline: none;
+}
+input{
+   
+    height: 3.5vw;
+    width: 35vw;
+    outline: none;
+    margin-bottom: 2vw;
+    /* background-color: rgba(0, 0, 0, 0.45); */
+    background-color: rgb(250, 245, 245);
+    border-radius: 1vw;
+    font-size: 1.4vw;
+    color: black;
+ 
+    padding-left: 1vw;
+    /* background:linear-gradient(to bottom,rgba(255, 255, 255, 0.589),#ff004f); */
+
+}
+#footer .box2 button{
+  display: block;
+  margin-top: 2vw;
+  font-size: 1.4vw;
+  border-radius: 50vw;
+  position: relative;
+  width: 12vw;
+  overflow: hidden;
+  padding: 0.2vw;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 10;
+}
+#footer .box2 button::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 255, 255, 0.83); */
+    background: linear-gradient(to bottom,aqua,#ff004f);
+    /* position: relative; */
+    position: absolute;
+    left: 0%;
+    bottom: -100%;
+    transition: all ease 0.6s;
+    border-radius: 50%;
+    z-index: -11;
+}
+#footer .box2 button:hover::after{
+    bottom: 0%;
+    border-radius: 0%;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------responsive---------------------------------------------------------------- */
+
+@media  (max-width: 600px){
+
+    
+ #page1{
+    height: 108vw;
+
+    width: 110%;
+
+    z-index: 1190900;
+   position: relative;
+ 
+
+} 
+
+#page1 .nav{
+   height: 8vw;
+   width: 100%;
+   /* background-color: wheat; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0vw 2vw;
+   z-index: 100;
+   
+
+
+}
+
+
+
+#page1 .nav h2{
+    color: white;
+    padding: 2vw 0vw;
+    display: inline-block;
+    margin-right: 5vw;
+    font-size: 1rem;
+    /* margin-top: 12vw; */
+ 
+}
+
+#page1 .nav img{
+    height: 5vw;
+    border-radius: 50px;
+    /* padding-top: 7vw; */
+    padding-left: 3vw;
+    /* margin-top: 23vw; */
+    
+
+}
+
+
+#page1 .nav .part1{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding-left: 1.5vw;
+    display: flex;
+    gap: 1.2vw;
+    /* background-color: black; */
+    z-index: 100;
+    
+}
+#page1 .nav .part1:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.539);
+}
+
+#page1 .nav .button{
+     color: rgba(255, 255, 255, 0.153);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1vw;
+     /* background-color: red; */
+     /* height: 324vw; */
+     /* width: 100%; */
+     gap: 1.5vw;
+     padding-right: 3vw;
+     position: relative;
+     /* z-index: 1; */
+     padding: 2vw 3vw;
+     /* flex-direction: column-reverse; */
+     /* margin-top: 55vw; */
+
+
+}
+#page1 .nav i{
+    color: white;
+    font-size: 3vw;
+}
+#page1 .nav .button h1{
+    /* border: 1px solid rgba(255, 255, 255, 0.529); */
+    padding: 0.4vw 0.6vw;
+    border-radius: 50px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+
+
+}
+#page1 .nav .button h1 a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.955);
+}
+
+#page1 .nav .button h1:hover a{
+    color: black;
+    z-index: 99;
+    position: relative;
+}
+
+#page1 .nav .button h1::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 255, 255);
+ position: relative; 
+    position: absolute;
+    left: 0%;
+    bottom: -100%;
+    transition: all ease 0.3s;
+    border-radius: 50%;
+
+
+}
+
+#page1 .nav .button h1:hover::after{
+    bottom:  0%;
+    border-radius: 0%;
+}
+#page1 .profile-detail{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background:linear-gradient(to bottom,black,#ff004f);  
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    padding-top: 70vw;
+  
+    z-index: 10;
+
+
+}
+#main #page1 .container{
+    background-color: #ff004f;
+}
+#page1 .profile-detail .box1{
+    height: 40vw;
+    width: 100%;
+    position: relative;
+    margin-top: 6vw;
+    z-index: 10;
+    /* background-color: #ff004f; */
+
+    /* background-color: red; */
+}
+#page1 .profile-detail .box2{
+    padding-right: 15vw;
+    padding-top: 0vw;
+    margin-top: 6vw;
+    /* background-color: #ff004f; */
+    z-index: 10;
+    display: none;
+
+
+}
+/* #page1 .profile-detail .box2 img{
+    height: 30vw;
+    border-radius: 50%;
+    padding-right: 10vw;
+    position: relative;
+    position: absolute;
+    top: 100vw;
+    left: 55vw;
+    z-index: 100;
+    margin-top: 5vw;
+        
+
+  
+} */
+/* #page1 .profile-detail .box2 .circle{
+    height: 28vw;
+    width: 28vw;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 99;
+    position: relative;
+    animation-name: anime;
+
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(10px);
+}
+
+@keyframes anime {
+    from{
+        transform: translate(10%,-8%);
+    }
+    to{
+        transform: translate(-10%,10%);
+    }
+    
+} */
+
+#page1 .profile-detail .box1 .my-info h3{
+    font-size: 5vw;
+    display: flex;
+    color: white;
+    z-index: 10;
+
+
+}
+#page1 .profile-detail .box1 .my-info h1 {
+    font-size: 6vw;
+    color: white;
+    z-index: 10;
+
+}
+
+.hide{
+    display: none;
+}
+
+#page1 .profile-detail .box1 .my-info h4{
+    color: white;
+    font-size: 4vw;
+    text-shadow: 0 0 20px aqua;
+
+}
+
+#page1 .profile-detail .box1 .my-info h3 p{
+    padding-left: 0.6vw;
+    color: white;
+    font-size: 5vw;
+}
+#page1 .profile-detail .box1 .my-info{
+    padding-left: 11vw;
+    padding-top: 3vw;
+    position: relative;
+
+
+}
+#page1 .profile-detail .box1 .my-info h1  .text{
+    color: #ff004f;
+    font-size: 4.5vw;
+    
+}
+
+/* -----------------------------------Responsiv about------------------------------------- */
+
+
+#page2{
+    display: flex;
+    width: 100%;
+    height: 300vw;
+    z-index: 3;
+    padding-top: 4vw ;
+    padding-left: 9vw;
+    background-color: black;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.416);
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+}
+ #page2 .column1{
+    height: 800%;
+    width: 85vw;
+    background-color: aqua;
+    background-image: url(images/big.jpg);
+    box-shadow: 0 0 15px #ff004f;
+    margin-top: 5vw;
+    background-position: center;
+    background-size: cover;
+    z-index: 99;
+    border-radius: 6vw;
+}
+ #page2 .column2{
+    color: rgba(255, 255, 255, 0.74);
+    height: 60vw;
+    width: 90%;
+    /* margin-top: 80vw; */
+    margin-bottom: 40vw;
+    margin-top: 10vw;
+    /* background-color: red; */
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-right: 7vw;
+
+}
+#page2 .column2 .details{
+    padding-top: 9vw;
+    padding-left: 0.5vw;
+    display: flex;
+    font-size: 4vw;
+    gap: 5vw;
+
+
+
+}
+#page2 .column2 .details h3{
+    height: 5vw;
+    /* border: 1px solid white; */
+   
+    padding: 1vw 0.6vw;
+    border-radius: 50px;
+    /* padding-bottom: 2vw; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+#page2 .column2 .details h3::after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 255, 255, 0.83);
+        /* position: relative; */
+        position: absolute;
+        left: 0%;
+        bottom: -100%;
+        transition: all ease 0.6s;
+        border-radius: 50%;
+}
+#page2 .column2 .details h3:hover::after{
+    bottom:  0%;
+    border-radius: 0%;
+
+    z-index: 98;
+}
+#page2 .column2 .details-content{
+    padding-top: 3vw;
+    padding-left: 1vw;
+    gap: 1vw;
+   
+    
+}
+#page2 .column2 .details-content ul li{
+    margin-top: 3vw;
+    font-size: 4.6vw;
+    list-style: none;
+}
+#page2 .column2 .details-content ul li span{
+    color: #ff004f;
+}
+#page2 .column2 .content1{
+    display: none;
+}
+
+#page2 .column2 .content2{
+    display: none;
+}
+#page2 .column2 .details h3 b{
+    color: rgba(255, 255, 255, 0.667);
+    z-index: 100;
+    position: relative;
+}
+#page2 .column2 .details h3:hover b{
+  
+    color: black;
+    z-index: 100;
+}
+ #page2 .column2 h2{
+    font-size: 8vw;
+    color: white;
+    display: none;
+}
+
+#page2 .heading{
+    color: white;
+    font-size: 10vw;
+    margin-top: 70vw;
+    display: block;
+
+}
+
+
+ #page2 .column2 p{
+    margin-top: 3vw;
+    font-size: 4.8vw;
+}
+
+
+ #page2 .circle{
+    height: 40vw;
+    width: 40vw;
+    background-color: aqua;
+    border-radius: 50%;
+    z-index: -1;
+    position: relative;
+    position: absolute;
+    bottom: 100vw;
+    left: 3vw;
+
+    animation-name: anime;
+
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(10px);
+}
+
+@keyframes anime {
+    from{
+        transform: translate(10%,-8%);
+    }
+    to{
+        transform: translate(-10%,10%);
+    }
+    
+}
+
+
+
+
+/* -- --------------------------My Responsiv Services------------------------  */
+
+#page3{
+    height: 250vw;
+    width: 105%;
+    position: relative;
+    background-color: black;
+    padding-left: 14vw;
+    padding-top: 4vw;
+    /* display: flex; 
+    justify-content: center; */
+    z-index: 3;
+
+   
+}
+
+
+#page3 .box1{
+    height: 65vw;
+    width: 72vw;
+    background: rgba(255, 255, 255, 0.153);
+    /* flex-direction: column; */
+    display: flex;
+    display: inline-block;
+    border-radius: 5vw;
+    color: white;
+    padding-top: 2vw;
+    position: relative;
+    padding-left: 3vw;
+    /* padding-bottom: 1vw; */
+    transition: all ease 0.6s;
+    margin-bottom: 10vw;
+
+}
+#page3 .box1:hover {
+   transform: translateY(-10px);
+   background-color: #ff004f;
+   
+}
+#page3 h1{
+    font-size: 9vw;
+    padding-left: 0vw;
+    color: white;
+    padding-bottom: 2.5vw;
+
+ }
+
+ #page3 .box .box1 h2{
+    font-size: 7vw;
+    padding-top: 1.2vw;
+
+ }
+ #page3 .box .box1 p{
+    padding-top: 2vw;
+    font-size: 5vw;
+ }
+ 
+#page3 .box1 i{
+    font-size: 8vw;
+
+}
+
+#page3 .box .box1 h4 a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 5vw;
+
+}
+
+/* #page3 .box .box1 h4 .icon{
+    font-size: 1.5vw;
+    padding-left: 0.3vw;
+    z-index: 120;
+    color: white;
+} */
+#page3 .box .box1 h4 a i{
+    font-size: 4vw;
+    padding-left: 0.4vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------- Responsiv Skills-------------------------------------- */
+
+#page4{
+    width: 119%;
+    height: 140vw;
+    background-color: black;
+    position: relative;
+    /* padding-left: 5vw; */
+    padding-top: 4vw;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.416);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.416);
+    z-index: 3;
+
+
+
+}
+#page4 .container{
+    height:30.3vw;
+    width: 20vw;
+    position: relative;
+
+
+}
+#page4 h2{
+    color: white;
+    font-size: 8vw;
+    padding-bottom: 2.5vw;
+    padding-left: 1vw;
+    margin-left: 3vw;
+    margin-bottom: 2vw;
+
+
+}
+#page4 .container .skill {
+    height: 10vw;
+    width: 90vw;
+    /* background-color: rgba(255, 255, 255, 0.153); */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid aqua;
+    margin-left: 3vw;
+    /* border-top: 1px solid #ff004f; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    padding-left: 3vw;
+    padding-top: 1vw;
+    
+}
+
+
+  #page4 .skill h1{
+    font-size: 5vw;
+    width: 100%;
+    height: 100%;
+    /* margin-left: 5vw; */
+    color: rgba(255, 255, 255, 0.589);
+    z-index: 99;
+    padding-top: 2vw;
+    display: block;
+  }
+
+  .anime{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(to bottom,aqua,#ff004f);
+
+    /* background-color: #ff004f; */
+    position: absolute;
+    left: 0%;
+    top: -100%;
+    transition: all ease 0.3s;
+  }
+
+  .skill:hover .anime{
+    top: 0%;
+  }
+  .image-container{
+    height: 40vw;
+    width: 40vw;
+    position: fixed;
+    top: 125vw;
+    left: 32vw;
+    z-index: 990;
+    /* background-image: url(js\ logo.jpeg); */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 6px solid #ff004f;
+    background-color: rgba(255, 255, 255, 0.589);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: none;
+
+
+    
+  }
+  .image-container h1{
+    font-size: 13vw;
+    color: #ff004f;
+    z-index: 991;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    /* padding-top: 19vw;
+    padding-left: 15vw; */
+   
+    text-align: center;
+    display: none;
+    background-color:  rgba(255, 255, 255, 0.589);
+    display: flex;
+    align-items: center;
+   
+   }
+  #page4 .skill img{
+    height: 5vw;
+   width: 5.3vw;
+   object-position: center;
+    object-fit: cover;
+    margin-right: 3vw;
+    border-radius: 50%;
+    z-index: 1000;
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ /* ---------------------------------- Responsive Experiencs--------------------------- */
+
+ #page5{
+    background-color: black;
+    width: 109%;
+    height: 390vw;
+    z-index: 3;
+    position: relative;
+ }
+ #page5 h1{
+    padding-left: 7vw;
+    padding-top: 4vw;
+    font-size: 10vw;
+    color: white;
+ }
+
+ #page5 .container{
+    height: 85%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2vw;
+    margin-top: 10vw;
+
+ }
+ #page5 .container .pro{
+    height: 120vw;
+    width: 80vw;
+    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 3vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10vw;
+
+ }
+ #page5 .container .pro img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw;
+
+ }
+ #page5 .container .pro h2{
+    color: white;
+    font-size: 8vw;
+ }
+ #page5 .container .pro p{
+    color: white;
+    font-size: 5vw;
+ }
+ #page5 .container .pro .content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background:linear-gradient(to bottom,rgba(255, 255, 255, 0.589),#ff004f);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1vw;
+    transition: all ease 0.5s;
+
+
+
+ }
+ #page5 .container .pro:hover .content{
+     top: 0%;
+ }
+
+
+
+
+
+
+
+
+ 
+ /* --------------------------------Contect----------------------------------- */
+
+#page6{
+    height: 80vw;
+    width: 50%;
+    background-color: #ff004f;
+    z-index: 21;
+}
+#footer{
+    height: 80vw;
+    width: 109vw;
+    position: relative;
+    background:linear-gradient(to bottom,black,#ff004f);
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+    display: flex;
+    color: white;
+}
+#footer .box1{
+    height: 100%;
+    width: 50vw;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+#footer .box2{
+    height: 100%;
+    width: 50vw;
+    z-index: 10;
+    /* position: relative; */
+    padding-top: 12vw;
+    
+   
+}
+#footer .box2 textarea{
+    width: 35vw;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: aqua;
+    border-radius: 1vw;
+    padding-left: 1vw;
+    font-size: 1.4vw;
+    padding-top: 1vw;
+    padding-right: 1vw;
+   outline: none;
+}
+input{
+   
+    height: 3.5vw;
+    width: 35vw;
+    outline: none;
+    margin-bottom: 2vw;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 1vw;
+    font-size: 1.4vw;
+    color: aqua;
+ 
+    padding-left: 1vw;
+    /* background:linear-gradient(to bottom,rgba(255, 255, 255, 0.589),#ff004f); */
+
+}
+#footer .box2 button{
+  display: block;
+  margin-top: 2vw;
+  font-size: 1.4vw;
+  border-radius: 50vw;
+  position: relative;
+  width: 6vw;
+  overflow: hidden;
+  padding: 0.2vw;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 10;
+}
+#footer .box2 button::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 255, 255, 0.83); */
+    background: linear-gradient(to bottom,aqua,#ff004f);
+    /* position: relative; */
+    position: absolute;
+    left: 0%;
+    bottom: -100%;
+    transition: all ease 0.6s;
+    border-radius: 50%;
+    z-index: -11;
+}
+#footer .box2 button:hover::after{
+    bottom: 0%;
+    border-radius: 0%;
+}
+
+
+}
+ 
