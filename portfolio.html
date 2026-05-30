@@ -1,0 +1,289 @@
+<!-- <?php
+ if(isset($_POST["name"])){
+     $conn = mysqli_connect("localhost:3303", "root", "", "portfolio");
+    // if($conn){
+    //     echo "successfull";
+    // }else{
+    //     echo "not cunnected";
+    // }
+
+
+    $name = $_POST["name"]??"";
+    $email = $_POST["email"]??"";
+    $comp_name = $_POST["comp_name"]??"";
+    $massage = $_POST["massage"]??"";
+    
+
+    $sql = "INSERT INTO `portfolio`.`detail` ( `name`, `email`, `comp_name`, `massage`, `dt`) 
+    VALUES ( '$name', '$email', '$comp_name', '$massage', 
+    current_timestamp());";
+
+    // echo $sql;
+    
+    if($conn->query($sql) == true){
+        $insert = true;
+    }
+    else{
+        echo "error: $sql <br> $conn->error";
+    }
+    $conn->close();
+ }
+   
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href=""> -->
+     <link rel="stylesheet" href="portfolio.css">
+   
+
+
+
+</head>
+<body>
+
+    <div class="image-container">
+        <h1 class="present"></h1>
+    </div>
+    <!-- ---------------------hai----------------- -->
+
+
+<div id="main">
+    <div id="page1">
+        <!-- <div class="container"> -->
+            <div class="nav">
+
+               <div class="part1">
+                  <img src="images/mr coder.jpg" alt="">
+                   <h2>Portfolio</h2>
+                
+                   <!-- <spline-viewer class="robot" url="https://prod.spline.design/hvI59bXq3iex-qUi/scene.splinecode"></spline-viewer> -->
+
+            
+                 <div class="button">
+                    <div class="anime"></div>
+                   <h1><a href="#page1">Home</a></h1>
+                    <h1><a href="#page2">About</a></h1>
+                     <h1><a href="#page3">Services</a></h1>
+                    <h1><a href="#page4">Skills</a></h1>
+                    <h1><a href="#page5">Projects</a></h1>
+                   <h1><a href="#page6">Contact</a></h1>
+                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+             
+          </div>
+         
+        <!-- </div> -->
+        
+        <div class="profile-detail">
+            <div class="box1">
+                <div class="my-info">
+
+                <h4>Hello,</h4><br>
+           
+                        <h3>It's Me  <p>  Shivam K umar</p></h3>
+             <!-- <spline-viewer class="robot" url="https://prod.spline.design/hvI59bXq3iex-qUi/scene.splinecode"></spline-viewer> -->
+
+                <h1>And I'm a <span class="text"></span> </h1>
+            </div>
+
+            </div>
+    
+            <div class="box2">
+                <div class="circle"></div>
+                <img src="images/my dp.jpeg" alt="">
+                 <div class="imagebox"></div>
+            </div>
+  
+        </div>
+    </div>
+     </div>
+
+
+      <!-- --------------------------About------------------------  -->
+
+
+     <div id="page2">
+        <h2 class="heading">About</h2>
+
+        <div class="circle"></div>
+
+        <div class="column1"></div>
+        <div class="column2">
+            <h2>About</h2>
+            <p> I am a fresher, currently completing my diploma. I have knowledge of HTML, CSS, JavaScript, Bootstrap, Python and basic database connection. I am also working on some small projects to improve my skills.  </p>
+            <div class="details">
+                <h3 class="Experience"><b>Experience</b></h3>
+                <h3 class="Education"><b>Education</b></h3>
+            </div>
+
+            <div class="details-content content1">
+                <ul>
+                    <li><span>2025</span><br>NPTEL Cource With Computing Cloud</li>
+                    <li><span>2022</span><br>Web Designing</li>
+                </ul>
+            </div>
+            <div class="details-content content2">
+                <ul>
+                    <li><span>2023 - Current</span><br>Deploma Engineering with Computer Science <br>From- <span >Subhash Institute Of Technology Jmaui </span></li>
+                    <li><span>2022</span><br>10th from +2 Hingh School Jamui</li>
+                </ul>
+             <!-- <spline-viewer class="robot2" url="https://prod.spline.design/Y46U4q7ykcsaz3qB/scene.splinecode"></spline-viewer> -->
+
+
+            </div>
+        </div>
+     </div>
+
+
+           <!-- --------------------------My Services------------------------  -->
+
+
+
+
+           <div id="page3" >
+                   <h1>My Services</h1><br>
+               <div class="box">
+                   <div class="box1">
+                          <i class="fa-solid fa-code"></i>
+                          <h2>Web Design</h2>
+                           <div class="service_dic">I specialize in creating clean, responsive, and visually appealing user interfaces. Using HTML, CSS, JavaScript, and Bootstrap, I ensure that websites look great on all devices. I am currently enhancing my skills by learning React to build fast and dynamic web applications.</div>
+                          <br> <h4><a href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a></h4>
+                   </div>
+                   <div class="box1">
+                          <i class="fa-solid fa-code-merge"></i>
+                          <h2>Backend design</h2>
+                          <!-- <p >I specialize in creating clean, responsive, and visually appealing user interfaces. Using HTML, CSS, JavaScript, and Bootstrap, I ensure that websites look great on all devices. I am currently enhancing my skills by learning React to build fast and dynamic web applications.</p> -->
+                           <div class="service_dic">I specialize in creating clean, responsive, and visually appealing user interfaces. Using HTML, CSS, JavaScript, and Bootstrap, I ensure that websites look great on all devices. I am currently enhancing my skills by learning React to build fast and dynamic web applications.</div>
+                          <br><h4><a href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a></h4>
+                          
+
+                   </div>
+                   <!-- <div class="box1">
+                           <i class="fa-solid fa-crop-simple"></i>
+                           <h2>App Design</h2>
+                           <p>Lorem ipsum dolor sit amet re eligendi obcaecati ut optio repellendus quia dicta, modi excepturi minus possimus vel</p>
+                         <br> <h4><a href="#">Learn more<i class="fa-solid fa-arrow-right"></i></a></h4>
+
+                   </div> -->
+                </div>
+           </div>
+        
+           <!-- -------------------------------Skills-------------------------------- -->
+
+
+           <div id="page4">
+               <h2>Skills</h2>
+
+                <div class="container">
+
+                    <div class="skill" data-image="https://tse4.mm.bing.net/th?id=OIP.4dQkxLm-cAndV-9OfVjjQwHaE8&pid=Api&P=0&h=180">
+                        <div class="anime"></div>
+                        <h1 class="html">HTML</h1>
+                        <img class="html-img" src="images/html logo.jpeg" alt="">
+                      </div>
+
+                      <div class="skill" data-image="https://tse4.mm.bing.net/th?id=OIP.yUIb5S_kj98Eg5tT-Onx1AHaHa&pid=Api&P=0&h=180">
+                        <div class="anime"></div>
+                        <h1 class="css">CSS</h1>
+                        <img class="css-img" src="images/css logo.jpeg" alt="">
+
+                      </div>
+
+                      <div class="skill" data-image="https://tse3.mm.bing.net/th?id=OIP.JroZA6yi2vhYkSOENfSsVgHaIh&pid=Api&P=0&h=180">
+                        <div class="anime"></div>
+                        <h1 class="js">Javascript</h1>
+                        <img class="js-img" src="images/js logo.jpeg" alt="">
+
+                      </div>
+
+                      <div class="skill" data-image="https://tse4.mm.bing.net/th?id=OIP.T6tK2Ly2uqLQpueGA-Kz9QAAAA&pid=Api&P=0&h=180">
+                        <div class="anime"></div>
+                        <h1 class="sql">SQL</h1>
+                        <img class="mysql-img" src="images/my sql logo.jpeg" alt="">
+
+                      </div>
+
+                      <div class="skill" data-image="https://tse4.mm.bing.net/th?id=OIP.PXNp62LLV-aLT2ZUpHupZgHaHw&pid=Api&P=0&h=180">
+                        <div class="anime"></div>
+                        <h1 class="py">Python</h1>
+                        <img class="py-img" src="images/python logo.jpeg" alt="">
+
+                      </div>
+
+                      <div class="skill" data-image="https://tse3.mm.bing.net/th?id=OIP.bkbn2-K7c9rMBV5dvYXDrQHaIh&pid=Api&P=0&h=180">
+                        <div class="anime"></div>
+                        <h1 class="c">php</h1>
+                        <img class="c-img" src="images/c programing logo.png" alt="">
+
+                      </div>
+                </div>
+           </div>
+<!-- ------------------------------------projects-------------------------------------- -->
+        <div id="page5">
+            <h1>Projects</h1>
+
+            <div class="container">
+                <div class="pro">
+                    <img src="images/music.png" alt="">
+                 <div class="content">
+                     <h2>SR-music</h2>
+                     <p>Created a responsive music player website using HTML, CSS, JavaScript, and Bootstrap with features like play/pause, next song, previous song, and offline music playback.</p>
+                </div>
+                </div>
+
+                <div class="pro">
+                    <img src="images/wether.png" alt="">
+                    <div class="content">
+                        <h2>Weather Checker</h2>
+                        <p>Developed a responsive Weather Checker web application using HTML, CSS, JavaScript, and Weather API to display real-time weather information for any city.
+                            </p>
+                   </div>
+                </div>
+
+                <div class="pro">
+                    <img src="images/port.png" alt="">
+                    <div class="content">
+                        <h2>Portfolio</h2>
+                        <p>Create a personal portfolio website to showcase many pages like About section, Projects section, Skills section, Services section and Contact section by Using  - HTML, CSS, JavaScript.</p>
+                   </div>
+                </div>
+            </div>
+        </div>   
+<!-- ---------------------------------------------------Contect--------------------------------------------------------- -->
+
+<div id="footer">
+    <div class="box1">
+         <h1 style="font-size: 10vw; font-weight: 100; color: white; font-family: Brush Script MT, Brush Script Std, cursive;">Thank You</h1>
+    </div>
+    <div class="box2">
+     <form method="POST">
+        <input class="name" type="Name" placeholder="Enter Name" name="name"><br>
+        <input class="name" type="Email" placeholder="Enetr email" name="email"><br>
+        <input class="name" type="text" placeholder="Company name" name="company"><br>
+        <textarea class="name" placeholder="Massege" rows="10"></textarea>
+        <input class="submitbtn" type="submit" name="sbtn">
+     </form>
+    </div>
+    
+</div>
+
+    <div id="page6"></div>
+
+</div>
+
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js"></script>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js"></script>
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
